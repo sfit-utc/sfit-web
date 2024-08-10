@@ -1,8 +1,7 @@
-export interface HomeProps {}
 
-function Home(props: HomeProps) {
+function Home() {
   return (
-    <div className="md:container px-2">
+    <div className="text-center text- text-9xl font-bold text-green-800">
       <h1>Hello world</h1>
     </div>
   );
