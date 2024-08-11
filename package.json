@@ -11,13 +11,16 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "tailwind-watch": "yarn tailwindcss -i ./src/index.css -o ./src/output.css --watch"
+    "tailwind-watch": "yarn tailwindcss -i ./src/index.css -o ./src/output.css --watch",
+    "tailwind-watch-for-npm": "npm tailwindcss -i ./src/index.css -o ./src/output.css --watch"
   },
   "dependencies": {
+    "nvm": "^0.0.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.15.0",
-    "styled-components": "^6.1.12"
+    "styled-components": "^6.1.12",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "@eslint/js": "^9.8.0",
