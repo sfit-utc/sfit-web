@@ -1,25 +1,16 @@
+/* Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Jost */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* 1rem = 10px */
-
-html {
-    font-size: 62.5%; 
-    color: whit;
+/* Note
+    1px = 0.0625rem
+*/
+* {
+    font-family: 'Inter';
 }
 
-.home {
-    position: relative;
-}
-
-.home__background {
-    position: absolute;
-    z-index: 0;
-}
-
-.home--blurring {
-    background-color: black;
-    position: absolute;
-    z-index: 10;
-}
