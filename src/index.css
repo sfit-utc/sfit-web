@@ -1,3 +1,21 @@
+/* Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Jost */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+<<<<<<< HEAD
+=======
+
+/* Note
+    1px = 0.0625rem
+*/
+* {
+    font-family: 'Inter';
+    box-sizing: border-box;
+}
+
+
+>>>>>>> 39bcb1c6a9a8d56564703f5bf6fec17ab7a6c223
