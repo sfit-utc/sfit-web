@@ -1,85 +1,67 @@
-import React, { Component, useEffect } from "react";
-import '../index.css';
-import { useState } from "react";
-
-    // No optimazation
+import { useState, useEffect, useCallback } from 'react';
 
 function Slider() {
-    const [slides, setSlides] = useState(Array.from(document.querySelectorAll('.slide')));
-    const [dotList, setDotList] = useState(Array.from(document.querySelectorAll(".dot")))
-
+    const [slides, setSlides] = useState<HTMLDivElement[]>([]);
+    const [dotList, setDotList] = useState<HTMLDivElement[]>([]);
+    const [activeIdx, setActiveIdx] = useState(0);
 
     useEffect(() => {
         // Convert NodeList to Array
-        const slidesArray = Array.from(document.querySelectorAll('.slide'));
+        const slidesArray = Array.from(document.querySelectorAll('.slide')) as HTMLDivElement[];
         setSlides(slidesArray);
-        const dotArray = Array.from(document.querySelectorAll(".dot"));
+        const dotArray = Array.from(document.querySelectorAll(".dot")) as HTMLDivElement[];
         setDotList(dotArray);
     }, []);
-    let activeIdx = 0;
 
+    // useCallback to memoize changeSlide
+    const changeSlide = useCallback((index: number) => {
+        slides.forEach((slide, idx) => {
+            slide.classList.toggle("visible", idx === index);
+            slide.classList.toggle("opacity-100", idx === index);
+            slide.classList.toggle("invisible", idx !== index);
+            slide.classList.toggle("opacity-0", idx !== index);
+        });
 
-    let prevIdx;
+        dotList.forEach((dot, idx) => {
+            dot.classList.toggle("visible", idx === index);
+            dot.classList.toggle("invisible", idx !== index);
+        });
+    }, [slides, dotList]);
+
+    useEffect(() => {
+        changeSlide(activeIdx);
+    }, [activeIdx, changeSlide]);
+
     const prevButton = () => {
-        prevIdx = activeIdx;
-        activeIdx--;
-        if (activeIdx<0) {
-            activeIdx = slides.length-1;
-            console.log(activeIdx,)
-        }
-        changeSlide(activeIdx)
-    }
+        setActiveIdx(prevIdx => {
+            const newIdx = (prevIdx - 1 + slides.length) % slides.length;
+            changeSlide(newIdx);
+            return newIdx;
+        });
+    };
 
     const nextButton = () => {
-        prevIdx = activeIdx;
-        activeIdx++;
-    
-        if (activeIdx>slides.length-1) {
-            activeIdx = 0;
-        }
-        changeSlide(activeIdx)
-
-    }
-
-    const changeSlide = (activeIdx:number) => {
-        slides.forEach((slide,index) => {
-            slide.classList.remove("visible","opacity-100")
-            slide.classList.add("invisible","opacity-0")
-            if (activeIdx == index) {
-                slide.classList.add("visible","opacity-100")
-                slide.classList.remove("invisible","opacity-0")
-            }
-        })
-
-        dotList.forEach((dot,index) => {
-            dot.classList.remove("visible")
-            dot.classList.add("invisible")
-            if (activeIdx == index) {
-                dot.classList.add("visible")
-                dot.classList.remove("invisible")
-            }
-        })
-    }
-
+        setActiveIdx(prevIdx => {
+            const newIdx = (prevIdx + 1) % slides.length;
+            changeSlide(newIdx);
+            return newIdx;
+        });
+    };
 
     return (
         <div className="relative flex items-center justify-center 
-                        w-[35.25rem] h-[19.4375rem]
+                        w-[40rem] h-[25rem]
                         [&>div]:absolute
-                        [&>div]:w-[30rem] [&>div]:h-[20rem]
+                        [&>div]:w-[34.5rem] [&>div]:h-[23rem]
                         [&>div]:shadow-[0px_13px_15.8px_0px_rgba(0,0,0,0.25)] 
                         [&>div]:bg-cover [&>div]:bg-no-repeat [&>div]:bg-center 
                         [&>div]:transition-opacity [&>div]:duration-500 [&>div]:ease-in-out">
 
             {/* Img */}
-            <div className="slide bg-[url(./assets/techclub.jpg)] visible">
-            </div>
-            <div className="slide bg-[url(./assets/hackathonVPBank.jpg)] invisible">
-            </div>  
-            <div className="slide bg-[url(./assets/techclub.jpg)] invisible">
-            </div>
-            <div className="slide bg-[url(./assets/hackathonVPBank.jpg)] invisible">
-            </div>
+            <div className="slide bg-[url(./assets/techclub.jpg)] visible"></div>
+            <div className="slide bg-[url(./assets/hackathonVPBank.jpg)] invisible"></div>
+            <div className="slide bg-[url(./assets/techclub.jpg)] invisible"></div>
+            <div className="slide bg-[url(./assets/hackathonVPBank.jpg)] invisible"></div>
  
             {/* Button */}
             <button onClick={prevButton} className="prev absolute left-0">
