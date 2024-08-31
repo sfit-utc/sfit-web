@@ -60,8 +60,6 @@ function Home() {
       </div>
     </div>
 
-
-     
   );
 }
 
