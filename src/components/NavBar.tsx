@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import "../index.css";
 
 
@@ -15,25 +15,25 @@ function NavBar() {
                         
             <div className='hover:border-white group'>
                 <Link className="group-hover:-translate-x-1
-                                 group-hover:animate-[fading_0.4s_ease-in-out_0ms]" to="home">
+                                 group-hover:animate-[fading_0.4s_ease-in-out_0ms]" to="home" smooth={true} duration={500}>
                 Trang chủ</Link>
             </div>
 
             <div className='hover:border-white group'>
                 <Link className="group-hover:-translate-x-1 
-                                 group-hover:animate-[fading_0.4s_ease-in-out_0ms]" to="team">
+                                 group-hover:animate-[fading_0.4s_ease-in-out_0ms]" to="aim"  smooth={true} duration={500}>
                 Các ban trực thuộc</Link>
             </div>
 
             <div className='hover:border-white group'>
                 <Link className="group-hover:-translate-x-1 
-                                 group-hover:animate-[fading_0.4s_ease-in-out_0ms]" to="activites">
+                                 group-hover:animate-[fading_0.4s_ease-in-out_0ms]" to="activites" smooth={true} duration={500}>
                 Hoạt động</Link>
             </div>
 
             <div className='hover:border-white group'>
                 <Link className="group-hover:-translate-x-1 
-                                 group-hover:animate-[fading_0.4s_ease-in-out_0ms]" to="training">
+                                 group-hover:animate-[fading_0.4s_ease-in-out_0ms]" to="training" smooth={true} duration={500}>
                 Đào tạo</Link>
             </div>
         </div>
