@@ -1,6 +1,6 @@
 import React from "react";
-import Home from "../sections/Home";
-import Aim from "../sections/Aim";
+import Aim from "../../sections/Aim";
+import Home from "./Home";
 
 function LandingPage(){
     return (
