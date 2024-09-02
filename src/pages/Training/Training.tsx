@@ -1,6 +1,6 @@
 const Training: React.FC = () => {
   return (
-    <div className="bg-white w-screen h-fit overflow-x-hidden *:text-[#267452] ">
+    <div className="bg-white w-screen h-fit overflow-x-hidden *:text-[#267452] my-20">
       <h1
         className="text-center tracking-normal
                        font-[Inter] text-5xl font-bold
