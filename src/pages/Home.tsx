@@ -1,6 +1,7 @@
-import "../../index.css";
-import NavBar from "../../components/NavBar";
-import Slider from "../../components/Slider";
+
+import NavBar from "../components/NavBar";
+import Slider from "../components/Slider";
+
 
 function Home() {
   return (
@@ -23,7 +24,7 @@ function Home() {
         {/* Main */}
         <div className="absolute w-[90%] h-[80%]">
           {/* Navigation */}
-          <NavBar />
+          <NavBar/>
           {/* First Page */}
           <div className="min-h-full flex justify-around items-center">
             {/* Information */}
@@ -86,7 +87,7 @@ function Home() {
             </div>
 
             {/* Slider */}
-            <Slider />
+            <Slider/>
           </div>
         </div>
       </div>
