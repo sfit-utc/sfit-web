@@ -11,20 +11,20 @@ import Event from "../components/Event/Event";
 import Honors from "../components/Honors/Honors";
 import Questions from "../components/Questions/Questions";
 
-function LandingPage(){
+function LandingPage() {
     return (
         <div className="overflow-x-hidden">
-            <Home/>
-            <Aim/>
-            <Advisory/>
-            <Classes/>
-            <Competition/>
-            <Leader/>
-            <Teams/>
-            <Event/>
-            <Honors/>
-            <Questions/>
-            <Footer/>
+            <Home />
+            <Aim />
+            <Advisory />
+            <Classes />
+            <Competition />
+            <Leader />
+            <Teams />
+            <Event />
+            <Honors />
+            <Questions />
+            <Footer />
         </div>
     )
 }

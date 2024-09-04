@@ -7,11 +7,15 @@ export default {
   theme: {
     extend: {
       keyframes: {
-        fading : {
-          '0%, 100%': {opacity: 1},
-          '50%' : {opacity:0.5},
+        fading: {
+          '0%, 100%': { opacity: 1 },
+          '50%': { opacity: 0.5 },
         }
-      }
+      },
+      fontFamily: {
+        playfair: ['"Playfair Display"', 'serif'],
+        'crimson-text': ['"Crimson Text"', 'serif'],
+      },
     },
   },
   plugins: [],
