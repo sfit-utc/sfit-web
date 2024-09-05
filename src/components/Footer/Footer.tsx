@@ -4,8 +4,8 @@ import mail_icon from "../../assets/mail-svgrepo-com.svg";
 
 function Footer() {
   return (
-    <div className="bg-green-800 text-white flex flex-col items-center justify-center px-10 pt-10">
-      <div className="flex justify-between w-[90%] px-8">
+    <div className="bg-green-800 text-white flex flex-col items-center justify-center px-10">
+      <div className="flex justify-between w-[90%] p-8">
         <div>
           <div className="font-bold text-6xl">SFIT</div>
           <div className="text-2xl mt-5 leading-relaxed">
@@ -64,7 +64,11 @@ function Footer() {
         <div className="flex flex-col gap-3 mt-4">
           <div className="font-bold text-3xl">Liên Hệ</div>
           <div className="text-xl flex items-center gap-2">
-            <img src={mail_icon} alt="mail-icon" className="w-[40px] h-[40px]" />
+            <img
+              src={mail_icon}
+              alt="mail-icon"
+              className="w-[40px] h-[40px]"
+            />
             clbtinhocgtvt@gmail.com
           </div>
           <div className="text-xl leading-relaxed flex items-center">
@@ -79,7 +83,9 @@ function Footer() {
           </div>
         </div>
       </div>
+
       <div className="font-bold text-center text-[100px]">
+        <hr className=" bg-white w-screen" />
         STUDENT FACULTY OF IT
       </div>
     </div>
