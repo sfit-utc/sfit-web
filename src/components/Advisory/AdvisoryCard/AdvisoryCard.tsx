@@ -1,4 +1,3 @@
-import React from 'react';
 
 interface Advisor {
     image: string;
@@ -11,8 +10,8 @@ interface Advisor {
 function AdvisoryCard({ advisor }: { advisor: Advisor }) {
     return (
         <div className="w-80 h-fit *:font-[crimson-text]">
-            <div className="h-72 w-80">
-              <img
+            <div className="h-96 w-80">
+              <img 
                 className="w-full h-full object-cover border-8 rounded-3xl "
                 src={advisor.image}
                 alt="advisor1"
