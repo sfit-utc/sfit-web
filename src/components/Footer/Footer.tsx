@@ -1,4 +1,6 @@
 import github_mark from "../../assets/github-mark-white.svg";
+import location_sign from "../../assets/location-sign-svgrepo-com.svg";
+import mail_icon from "../../assets/mail-svgrepo-com.svg";
 
 function Footer() {
   return (
@@ -61,10 +63,19 @@ function Footer() {
         </div>
         <div className="flex flex-col gap-3 mt-4">
           <div className="font-bold text-3xl">Liên Hệ</div>
-          <div className="text-2xl">clbtinhocgtvt@gmail.com</div>
-          <div className="text-2xl leading-relaxed">
-            Số 3, đường Cầu Giấy, phường Láng Thượng,
-            <br /> quận Đống Đa, Hà Nội
+          <div className="text-xl flex items-center gap-2">
+            <img src={mail_icon} alt="mail-icon" className="w-[40px] h-[40px]" />
+            clbtinhocgtvt@gmail.com
+          </div>
+          <div className="text-xl leading-relaxed flex items-center">
+            <img
+              src={location_sign}
+              alt="location-sign"
+              className="w-[40px] h-[40px]"
+            />
+            Samsung Lab, tầng 4, tòa A4,
+            <br />
+            trường Đại học Giao thông Vận tải
           </div>
         </div>
       </div>
