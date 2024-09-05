@@ -2,7 +2,7 @@ import github_mark from "../../assets/github-mark-white.svg";
 
 function Footer() {
   return (
-    <div className="bg-green-800 text-white flex flex-col items-center justify-center p-10">
+    <div className="bg-green-800 text-white flex flex-col items-center justify-center px-10 pt-10">
       <div className="flex justify-between w-[90%] px-8">
         <div>
           <div className="font-bold text-6xl">SFIT</div>
