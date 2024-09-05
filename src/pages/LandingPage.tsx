@@ -9,7 +9,7 @@ import Leader from "../components/Leader/Leader";
 import Teams from "../components/Teams/Teams";
 import Event from "../components/Event/Event";
 import Honors from "../components/Honors/Honors";
-import Questions from "../components/Questions/Questions";
+import FAQs from "../components/FAQs/FAQs";
 
 function LandingPage() {
     return (
@@ -23,7 +23,7 @@ function LandingPage() {
             <Teams />
             <Event />
             <Honors />
-            <Questions />
+            <FAQs />
             <Footer />
         </div>
     )

@@ -71,7 +71,7 @@ function Footer() {
             />
             clbtinhocgtvt@gmail.com
           </div>
-          <div className="text-xl leading-relaxed flex items-center">
+          <div className="text-xl leading-relaxed flex items-center gap-2">
             <img
               src={location_sign}
               alt="location-sign"
@@ -85,7 +85,7 @@ function Footer() {
       </div>
 
       <div className="font-bold text-center text-[100px]">
-        <hr className=" bg-white w-screen" />
+        <hr className="w-screen" />
         STUDENT FACULTY OF IT
       </div>
     </div>
