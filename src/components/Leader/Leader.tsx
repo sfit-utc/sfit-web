@@ -6,12 +6,12 @@ import leader3 from "../../assets/leaders/6_Admin_3.jpg";
 function Leader() {
   return (
     <div id="leader" className="mt-[184px] mb-[120px] relative bg-white w-screen flex flex-col items-center justify-center">
-      <p className="text-center text-[42px] font-playfair font-bold leading-normal tracking-[1.68px] text-[#267452] mb-8">
+      <p className="md:text-[42px] text-center text-[32px] font-playfair font-bold leading-normal tracking-[1.68px] text-[#267452] mb-8">
         BAN CHỦ NHIỆM
       </p>
 
-      <div className="flex space-x-32 mt-[70px] mb-[8rem]">
-        <div className="transform translate-y-32">
+      <div className="md:flex md:space-x-32 mt-[70px] mb-[8rem]">
+        <div className="md:transform md:translate-y-32 p-4">
           <LeaderCard
             leader={{
               name: "Phạm Huy Hoàng",
@@ -22,7 +22,7 @@ function Leader() {
             }}
           />
         </div>
-        <div className="transform translate-y-0">
+        <div className="md:transform md:translate-y-0  p-4">
           <LeaderCard
             leader={{
               name: "Nguyễn Duy Mạnh",
@@ -33,7 +33,7 @@ function Leader() {
             }}
           />
         </div>
-        <div className="transform translate-y-32">
+        <div className="md:transform md:translate-y-32  p-4">
           <LeaderCard
             leader={{
               name: "Trịnh Thành Nam",
