@@ -83,7 +83,6 @@ function Footer() {
           </div>
         </div>
       </div>
-
       <div className="font-bold text-center text-[100px]">
         <hr className="w-screen" />
         STUDENT FACULTY OF IT
