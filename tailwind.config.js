@@ -1,3 +1,5 @@
+import { transform } from 'typescript';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -10,12 +12,17 @@ export default {
         fading: {
           '0%, 100%': { opacity: 1 },
           '50%': { opacity: 0.5 },
+        },
+        infiniteCarousel: {
+          '0%': {transform: 'translateX(0%)'},
+          '100%': {transform: 'translateX(-35%)'},
         }
       },
       fontFamily: {
         playfair: ['"Playfair Display"', 'serif'],
         'crimson-text': ['"Crimson Text"', 'serif'],
       },
+
     },
   },
   plugins: [],

@@ -86,9 +86,13 @@ function Teams() {
 
   return (
     <div className='w-screen'>
-      <div className="text-[#267452] text-center font-serif text-[35px] font-semibold leading-normal">
+      <h1
+        className="text-center tracking-normal
+                       font-[Inter] text-5xl font-bold text-[#267452]
+                       "
+      >
         CÁC BAN TRỰC THUỘC
-      </div>
+      </h1>
       <div className="mx-auto mt-2 bg-[#39906A] w-[525px] h-[4px]"></div>
       <div className='mt-[148px]'>
         {expanded ? (

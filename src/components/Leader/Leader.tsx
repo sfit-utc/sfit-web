@@ -6,10 +6,14 @@ import leader3 from "../../assets/leaders/6_Admin_3.jpg";
 function Leader() {
   return (
     <div id="leader" className="mt-[184px] mb-[120px] relative bg-white w-screen flex flex-col items-center justify-center">
-      <p className="md:text-[42px] text-center text-[32px] font-playfair font-bold leading-normal tracking-[1.68px] text-[#267452] mb-8">
+      <h1
+        className="text-center tracking-normal
+                       font-[Inter] text-5xl font-bold text-[#267452]
+                       "
+      >
         BAN CHỦ NHIỆM
-      </p>
-
+      </h1>
+      <div className="mx-auto mt-2 bg-[#39906A] w-[525px] h-[4px] mb-8"></div>
       <div className="md:flex md:space-x-32 mt-[70px] mb-[8rem]">
         <div className="md:transform md:translate-y-32 p-4">
           <LeaderCard
