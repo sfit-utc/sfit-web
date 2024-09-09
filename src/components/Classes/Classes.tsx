@@ -16,6 +16,8 @@ function Classes() {
       >
         ĐÀO TẠO
       </h1>
+      <div className="mx-auto mt-2 bg-[#39906A] w-[525px] h-[4px]"></div>
+      
       <h2
         className="text-center tracking-normal my-8
                        font-[Crimson_Text] text-4xl "

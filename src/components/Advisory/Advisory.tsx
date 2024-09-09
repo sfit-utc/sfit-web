@@ -55,12 +55,14 @@ function Advisory()  {
   return (
     <div className="bg-white w-screen h-screen relative overflow-x-hidden *:text-[#267452]">
       <h1
-        className="text-center tracking-normal my-20
-                           font-[playfair-display] text-5xl font-bold
+        className="text-center tracking-normal mt-20
+                           font-[Inter] text-5xl font-bold
                            "
       >
         BAN CỐ VẤN
       </h1>
+      <div className="mx-auto mt-2 bg-[#39906A] w-[525px] h-[4px] mb-20"></div>
+
       <div
         className=" boards w-screen h-2/3 
                     [&>div]:absolute flex items-center justify-center
