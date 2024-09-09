@@ -1,54 +1,133 @@
-import LeaderCard from "./LeaderCard/LeaderCard";
-import leader1 from "../../assets/leaders/6_Admin_1.jpg";
-import leader2 from "../../assets/leaders/6_Admin_2.jpg";
-import leader3 from "../../assets/leaders/6_Admin_3.jpg";
+import { useEffect, useState } from "react";
+import LeaderCard from "./LeaderCard";
+import Leader1 from "../../assets/leaders/6_Admin_1.jpg";
+import Leader2 from "../../assets/leaders/6_Admin_2.jpg";
+import Leader3 from "../../assets/leaders/6_Admin_3.jpg";
+
+const leadersData = [
+  {
+    "name": "Phạm Huy Hoàng",
+    "position": "Phó chủ nhiệm",
+    "image": Leader2,
+    "facebook": "https://www.facebook.com",
+    "email": "https://mail.google.com"
+  },
+  {
+    "name": "Nguyễn Duy Mạnh",
+    "position": "Chủ nhiệm",
+    "image": Leader1,
+    "facebook": "https://www.facebook.com",
+    "email": "https://mail.google.com"
+  },
+  {
+    "name": "Trịnh Thành Nam",
+    "position": "Phó chủ nhiệm",
+    "image": Leader3,
+    "facebook": "https://www.facebook.com",
+    "email": "https://mail.google.com"
+  }
+]
+
+const centerStyle = {
+  transform: "scale(1.2)",
+  transformOrigin: "center",
+  marginTop: "6px",
+};
 
 function Leader() {
+  const [widthWindow, setWidthWindow] = useState(window.innerWidth);
+  const [startX, setStartX] = useState(0);
+  const [space, setSpace] = useState(0);
+  const [cardStyles, setCardStyles] = useState([{}, centerStyle, {}]);
+
+  useEffect(() => {
+    const handleResize = () => setWidthWindow(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+
+    if (widthWindow <= 768) {
+      setCardStyles([{}, centerStyle, {}]);
+    } else {
+      setSpace(0);
+      setCardStyles([{}, {}, {}]);
+    }
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, [widthWindow]);
+
+  const handleTouchStart = (e: any) => {
+    setStartX(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = (e: any) => {
+    const endX = e.changedTouches[0].clientX;
+    const diffX = startX - endX;
+
+    if (diffX > 50 && space > -250) {
+      const newSpace = space - 250;
+      setSpace(newSpace);
+      updateCardStyles(newSpace);
+    } else if (diffX < -50 && space < 250) {
+      const newSpace = space + 250;
+      setSpace(newSpace);
+      updateCardStyles(newSpace);
+    }
+  };
+
+  const updateCardStyles = (newSpace: any) => {
+    if (newSpace === 0) {
+      setCardStyles([{}, centerStyle, {}]);
+    } else if (newSpace === -250) {
+      setCardStyles([{}, {}, centerStyle]);
+    } else {
+      setCardStyles([centerStyle, {}, {}]);
+    }
+  };
+
   return (
-    <div id="leader" className="mt-[184px] mb-[120px] relative bg-white w-screen flex flex-col items-center justify-center">
-      <h1
-        className="text-center tracking-normal
-                       font-[Inter] text-5xl font-bold text-[#267452]
-                       "
-      >
+    <div
+      id="leader"
+      className="mt-[184px] mb-[120px] bg-white flex flex-col items-center justify-center"
+    >
+      <h1 className="text-center tracking-normal font-[Inter] text-5xl font-bold text-[#267452]">
         BAN CHỦ NHIỆM
       </h1>
       <div className="mx-auto mt-2 bg-[#39906A] w-[525px] h-[4px] mb-8"></div>
-      <div className="md:flex md:space-x-32 mt-[70px] mb-[8rem]">
-        <div className="md:transform md:translate-y-32 p-4">
-          <LeaderCard
-            leader={{
-              name: "Phạm Huy Hoàng",
-              position: "Phó chủ nhiệm",
-              image: leader2,
-              facebook: "https://www.facebook.com",
-              email: "https://mail.google.com"
+
+      {widthWindow < 768 ? (
+        <div className="m-[50px]">
+          <div
+            className="flex gap-[60px] transition-transform duration-500"
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
+            style={{
+              transform: `translateX(${space}px)`,
+              transition: "transform 0.5s",
             }}
-          />
+          >
+            {leadersData.map((leader, index) => (
+              <div
+                key={index}
+                className="w-[200px] duration-500 ease-in-out"
+                style={cardStyles[index]}
+              >
+                <LeaderCard leader={leader} />
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="md:transform md:translate-y-0  p-4">
-          <LeaderCard
-            leader={{
-              name: "Nguyễn Duy Mạnh",
-              position: "Chủ nhiệm",
-              image: leader1,
-              facebook: "https://www.facebook.com",
-              email: "https://mail.google.com"
-            }}
-          />
+      ) : (
+        <div className="md:flex md:space-x-32 mt-[70px] mb-[8rem]">
+          {leadersData.map((leader, index) => (
+            <div
+              key={index}
+              className={`md:transform ${index === 1 ? "md:translate-y-0" : "md:translate-y-32"
+                } p-4`}
+            >
+              <LeaderCard leader={leader} />
+            </div>
+          ))}
         </div>
-        <div className="md:transform md:translate-y-32  p-4">
-          <LeaderCard
-            leader={{
-              name: "Trịnh Thành Nam",
-              position: "Phó chủ nhiệm",
-              image: leader3,
-              facebook: "https://www.facebook.com",
-              email: "https://mail.google.com"
-            }}
-          />
-        </div>
-      </div>
+      )}
     </div>
   );
 }

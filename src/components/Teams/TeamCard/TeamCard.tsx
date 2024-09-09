@@ -27,10 +27,10 @@ function TeamCard({ team, type }: TeamCardProps) {
 
     return (
         type ? (
-            <div className='duration-500 ease-in-out transform hover:scale-105 mb-[100px]'>
-                <div className="h-[400px]">
-                    <div className="h-[400px] md:flex md:ml-[80px] md:float-start">
-                        <div className="flex justify-center">
+            <div className='relative duration-500 ease-in-out transform hover:scale-105 mb-[100px]'>
+                <div className="h-[400px] relative z-10">
+                    <div className="h-[400px] md:flex md:ml-[80px] md:float-start relative z-10">
+                        <div className="flex justify-center relative z-10">
                             <div className="md:w-[400px] md:h-[400px] w-[300px] h-[300px] bg-[#d9d9d9] rounded-[30px]" style={{
                                 backgroundImage: `url(${team.image})`,
                                 backgroundSize: 'cover',
@@ -51,7 +51,7 @@ function TeamCard({ team, type }: TeamCardProps) {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex justify-center items-center md:ml-[100px] mt-[15px] md:mt-[0px] m-[5px] md:m-[0]">
+                        <div className="flex justify-center items-center md:ml-[100px] mt-[15px] md:mt-[0px] m-[5px] md:m-[0] relative z-10">
                             <div>
                                 <div className="md:w-[609px] md:h-[85px] text-center text-black md:text-[44px] text-[20px] font-semibold font-['Crimson Text']">
                                     {team.name}
@@ -61,23 +61,23 @@ function TeamCard({ team, type }: TeamCardProps) {
                                     <span className="text-black md:text-2xl font-semibold font-['Crimson Text']">: {team.leader}</span>
                                 </div>
                                 <div className="md:w-[610px] md:h-[166px] text-center">
-                                    <span className="text-black md:text-2xl  text-[16px] font-bold font-['Crimson Text']">Hoạt động</span>
-                                    <span className="text-black md:text-2xl  font-semibold font-['Crimson Text']"> : {team.activate}</span>
+                                    <span className="text-black md:text-2xl text-[16px] font-bold font-['Crimson Text']">Hoạt động</span>
+                                    <span className="text-black md:text-2xl font-semibold font-['Crimson Text']"> : {team.activate}</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div
-                    className="md:w-[683px] md:h-[683px] top-[0%] right-[0%] absolute rounded-full blur-[85px]"
+                    className="w-[683px] h-[683px] top-[0%] right-[0%] absolute rounded-full blur-[85px] z-0"
                     style={{
                         backgroundColor: `${randomColor}40`, // Màu cố định trong trường hợp này
                     }}
                 />
             </div>
         ) : (
-            <div className='duration-500 ease-in-out transform hover:scale-105 mb-[100px]'>
-                <div className="h-[400px]">
+            <div className='relative duration-500 ease-in-out transform hover:scale-105 mb-[100px]'>
+                <div className="h-[400px] relative z-10">
                     <div className="h-[400px] md:flex md:mr-[80px] float-end md:mt-[0]">
                         <div className="order-2 flex justify-center">
                             <div className="md:w-[400px] md:h-[400px] w-[300px] h-[300px] bg-[#d9d9d9] rounded-[30px]" style={{
@@ -94,7 +94,7 @@ function TeamCard({ team, type }: TeamCardProps) {
                                         height: '100px',
                                         position: 'absolute',
                                         top: '4%',
-                                        left: '87%',
+                                        left: '-13%',
                                         margin: 'auto',
                                     }}></div>
                                 </div>
@@ -118,7 +118,7 @@ function TeamCard({ team, type }: TeamCardProps) {
                     </div>
                 </div>
                 <div
-                    className="md:w-[683px] md:h-[683px] top-[0%] left-[0%] absolute rounded-full blur-[85px]"
+                    className="w-[683px] h-[683px] top-[0%] left-[0%] absolute rounded-full blur-[85px] z-0"
                     style={{
                         backgroundColor: `${randomColor}40`, // Màu cố định trong trường hợp này
                     }}

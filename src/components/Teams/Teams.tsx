@@ -24,14 +24,14 @@ const teams = [
     icon: '/src/assets/teams/BAN_WEB_ICON.svg',
   },
   {
-    name: 'BAN GAME',
+    name: 'BAN LẬP TRÌNH GAME',
     activate: 'Tạo môi trường học tập và làm việc cho những bạn muốn theo hướng phát triển game (programmer, artist, designer). Thường tổ chức chia đội để tham gia những sự kiện GameJam (GameJam VietNam, GMTK GameJam)',
     leader: 'Trịnh Thành Nam',
     image: '/src/assets/teams/BAN_GAME.jpg',
     icon: '/src/assets/teams/BAN_GAME_ICON.svg',
   },
   {
-    name: 'BAN AI',
+    name: 'BAN DATA&AI',
     activate: 'Nghiên cứu và phát triển các ứng dụng trí tuệ nhân tạo, chia sẻ kiến thức về machine learning và deep learning.',
     leader: 'Phạm Huy Hoàng',
     image: '/src/assets/teams/BAN_AI.jpg',
