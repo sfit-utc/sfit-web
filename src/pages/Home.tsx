@@ -1,7 +1,5 @@
-
 import NavBar from "../components/NavBar";
 import Slider from "../components/Slider";
-
 
 function Home() {
   return (
@@ -10,7 +8,7 @@ function Home() {
       {/* Welcome */}
       <div
         className="relative w-screen h-screen
-                      flex justify-center items-center"
+                      flex justify-center"
       >
         {/* Background */}
         <div
@@ -22,16 +20,16 @@ function Home() {
         ></div>
 
         {/* Main */}
-        <div className="absolute w-[90%] h-[80%]">
+        <div className="absolute mt-10">
           {/* Navigation */}
-          <NavBar/>
+          <NavBar />
           {/* First Page */}
-          <div className="min-h-full flex justify-around items-center">
+          <div className="w-screen h-[80vh] px-24 flex flex-col lg:flex-row justify-between items-center">
             {/* Information */}
             <div className="flex flex-col w-fit">
               <span
-                className="w-fit h-fit
-              text-[11.625rem] text-transparent leading-[100%] font-bold font-['Jost']
+                className="w-fit h-fit text-[140px]
+              xl:text-[11.625rem] text-transparent leading-[100%] font-bold font-['Jost']
               drop-shadow-[4px_4px_4px_rgba(0,0,0,0.25)]
               bg-[linear-gradient(111deg,_#DEFFEE_10%,_#0FA858_72%,_#194C35_87%)] bg-clip-text "
               >
@@ -39,14 +37,14 @@ function Home() {
               </span>
               <span
                 className="w-fit 
-                              text-5xl font-bold text-white"
+                              text-4xl xl:text-5xl font-bold text-white"
               >
                 UTC'S IT CLUB
               </span>
               <div
                 className="w-fit 
-                              flex items-center justify-center 
-                              my-6"
+                              flex items-center justify-center my-2
+                              xl:my-6"
               >
                 <button type="button" className="w-[70px] h-[70px]">
                   <svg
@@ -85,9 +83,10 @@ function Home() {
                 </span>
               </button>
             </div>
-
-            {/* Slider */}
-            <Slider/>
+            <div className="hidden md:block">
+              {/* Slider */}
+              <Slider />
+            </div>
           </div>
         </div>
       </div>

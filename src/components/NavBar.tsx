@@ -5,7 +5,7 @@ function NavBar() {
     return (
       <div
         className="hidden lg:flex justify-end items-center
-                          h-14 lg:gap-14 xl:gap-16
+                          h-14 lg:gap-14 xl:gap-16 pr-10 
                           *:px-7 *:flex *:justify-center
                           [&_div]:flex [&_div]:flex-col [&_div]:justify-center [&_div]:font-semibold [&_div]:text-2xl [&_div]:text-white
                           [&_div]:pb-2

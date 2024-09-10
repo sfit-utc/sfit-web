@@ -50,9 +50,9 @@ function Slider() {
 
     return (
         <div className="relative flex items-center justify-center 
-                        w-[40rem] h-[25rem]
-                        [&>div]:absolute
-                        [&>div]:w-[34.5rem] [&>div]:h-[23rem]
+                        xl:w-[40rem] xl:h-[25rem] w-[35rem] h-[25rem]
+                        [&>div]:absolute [&>div]:w-[30rem] [&>div]:h-[20rem]
+                        xl:[&>div]:w-[34.5rem] xl:[&>div]:h-[23rem]
                         [&>div]:shadow-[0px_13px_15.8px_0px_rgba(0,0,0,0.25)] 
                         [&>div]:bg-cover [&>div]:bg-no-repeat [&>div]:bg-center 
                         [&>div]:transition-opacity [&>div]:duration-500 [&>div]:ease-in-out">
