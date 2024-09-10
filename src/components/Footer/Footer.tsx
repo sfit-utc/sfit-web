@@ -5,10 +5,10 @@ import mail_icon from "../../assets/mail-svgrepo-com.svg";
 function Footer() {
   return (
     <div className="bg-green-800 text-white flex flex-col items-center justify-center px-10">
-      <div className="flex justify-between w-[90%] p-8">
+      <div className="lg:flex justify-between w-screen md:py-8 py-4 md:px-40 px-4">
         <div>
-          <div className="font-bold text-6xl">SFIT</div>
-          <div className="text-2xl mt-5 leading-relaxed">
+          <div className="font-bold md:text-6xl text-2xl">SFIT</div>
+          <div className="md:text-2xl text-xl md:mt-5 leading-relaxed">
             Câu Lạc Bộ Tin Học <br /> Trường Đại Học Giao Thông Vận Tải
           </div>
           <div className="mt-3 flex items-center gap-3">
@@ -62,8 +62,8 @@ function Footer() {
           </div>
         </div>
         <div className="flex flex-col gap-3 mt-4">
-          <div className="font-bold text-3xl">Liên Hệ</div>
-          <div className="text-xl flex items-center gap-2">
+          <div className="font-bold md:text-3xl text-xl">Liên Hệ</div>
+          <div className="md:text-xl text-lg flex items-center gap-2">
             <img
               src={mail_icon}
               alt="mail-icon"
@@ -71,7 +71,7 @@ function Footer() {
             />
             clbtinhocgtvt@gmail.com
           </div>
-          <div className="text-xl leading-relaxed flex items-center gap-2">
+          <div className="text-lg md:text-xl leading-relaxed flex items-center gap-2">
             <img
               src={location_sign}
               alt="location-sign"
@@ -83,7 +83,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="font-bold text-center text-[100px]">
+      <div className="font-bold text-center xl:text-[100px] lg:text-[80px] md:text-[60px] sm:text-[50px] text-[25px] text-white">
         <hr className="w-screen" />
         STUDENT FACULTY OF IT
       </div>
