@@ -14,8 +14,12 @@ export default {
           '50%': { opacity: 0.5 },
         },
         infiniteCarousel: {
-          '0%': {transform: 'translateX(0%)'},
-          '100%': {transform: 'translateX(-35%)'},
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-35%)' },
+        },
+        reverseCarousel: {
+          '0%': { transform: 'translateX(-35%)' },
+          '100%': { transform: 'translateX(0%)' },
         }
       },
       fontFamily: {

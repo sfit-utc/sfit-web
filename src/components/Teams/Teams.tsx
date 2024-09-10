@@ -88,13 +88,13 @@ function Teams() {
     <div className='w-screen'>
       <h1
         className="text-center tracking-normal
-                       font-[Inter] text-5xl font-bold text-[#267452]
+                       font-[Inter] md:text-5xl text-xl font-bold text-[#267452]
                        "
       >
         CÁC BAN TRỰC THUỘC
       </h1>
-      <div className="mx-auto mt-2 bg-[#39906A] w-[525px] h-[4px]"></div>
-      <div className='mt-[148px]'>
+      <div className="mx-auto mt-2 bg-[#39906A] md:w-[525px] w-[200px] h-[4px]"></div>
+      <div className='md:mt-[148px] mt-[50px]'>
         {expanded ? (
           teams.map((team, index) => (
             <TeamCard key={index} team={team} type={index % 2 === 0} />
@@ -106,7 +106,7 @@ function Teams() {
         )}
       </div>
       <button
-        className="flex mx-auto mt-4 bg-[#39906A] text-white px-4 py-2 rounded"
+        className="flex mx-auto mt-4 bg-[#39906A] text-white px-4 py-2 rounded relative z-10"
         onClick={() => setExpanded(!expanded)}
       >
         {expanded ? 'Thu gọn' : 'Xem thêm'}

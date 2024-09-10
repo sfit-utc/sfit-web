@@ -9,22 +9,22 @@ const leadersData = [
     "name": "Phạm Huy Hoàng",
     "position": "Phó chủ nhiệm",
     "image": Leader2,
-    "facebook": "https://www.facebook.com",
-    "email": "https://mail.google.com"
+    "facebook": "https://www.facebook.com/hakatoma15",
+    "email": "https://www.facebook.com/hakatoma15"
   },
   {
     "name": "Nguyễn Duy Mạnh",
     "position": "Chủ nhiệm",
     "image": Leader1,
-    "facebook": "https://www.facebook.com",
-    "email": "https://mail.google.com"
+    "facebook": "https://www.facebook.com/manh.nguyenduy.37201901",
+    "email": "https://www.facebook.com/manh.nguyenduy.37201901"
   },
   {
     "name": "Trịnh Thành Nam",
     "position": "Phó chủ nhiệm",
     "image": Leader3,
-    "facebook": "https://www.facebook.com",
-    "email": "https://mail.google.com"
+    "facebook": "https://www.facebook.com/profile.php?id=61559188863257",
+    "email": "https://www.facebook.com/profile.php?id=61559188863257"
   }
 ]
 
@@ -88,10 +88,10 @@ function Leader() {
       id="leader"
       className="mt-[184px] mb-[120px] bg-white flex flex-col items-center justify-center"
     >
-      <h1 className="text-center tracking-normal font-[Inter] text-5xl font-bold text-[#267452]">
+      <h1 className="text-center tracking-normal font-[Inter] md:text-5xl text-xl font-bold text-[#267452]">
         BAN CHỦ NHIỆM
       </h1>
-      <div className="mx-auto mt-2 bg-[#39906A] w-[525px] h-[4px] mb-8"></div>
+      <div className="mx-auto mt-2 bg-[#39906A] md:w-[525px] w-[200px] h-[4px] mb-8"></div>
 
       {widthWindow < 768 ? (
         <div className="m-[50px]">
