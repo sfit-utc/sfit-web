@@ -3,7 +3,7 @@ import Question from "./Question/Question";
 function FAQs() {
   return (
     <div className="w-screen items-center bg-white">
-      <h2 className="font-bold md:text-[42px] text-xl mt-5 bg-green-800 text-white text-center py-2 md:py-4">
+      <h2 className="font-bold md:text-[42px] text-xl mt-5 bg-green-800 text-white text-center py-2 md:py-7">
         CÁC CÂU HỎI THƯỜNG GẶP
       </h2>
 
