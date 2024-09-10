@@ -85,7 +85,7 @@ function Teams() {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className='w-screen'>
+    <div id='team' className='w-screen'>
       <h1
         className="text-center tracking-normal
                        font-[Inter] text-5xl font-bold text-[#267452]
