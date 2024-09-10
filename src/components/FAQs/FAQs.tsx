@@ -3,14 +3,14 @@ import Question from "./Question/Question";
 function FAQs() {
   return (
     <div className="w-screen items-center bg-white">
-      <h2 className="font-bold text-[42px] mt-5 font-crimson-text bg-[#267452] text-white text-center py-4">
+      <h2 className="font-bold md:text-[42px] text-xl mt-5 bg-green-800 text-white text-center py-2 md:py-4">
         CÁC CÂU HỎI THƯỜNG GẶP
       </h2>
 
-      <div className="grid divide-y divide-green-200 w-[60%] mx-auto mt-8  text-black">
+      <div className="grid divide-y divide-green-200 w-screen px-4 xl:px-44 lg:px-28 mx-auto text-black">
         <Question
           question={{
-            question: " Lịch sử hình thành của CLB?",
+            question: " Lịch sử hình thành của CLB",
             answers: [
               "CLB được thành lập từ năm 2016 do thầy Nguyễn Đức Dư Giảng viên bộ môn Công nghệ phần mềm hiện nay là Giám đốc trung tâm thông tin - thư viện đặt nền móng và sáng lập nên CLB.",
             ],
@@ -18,7 +18,7 @@ function FAQs() {
         />
         <Question
           question={{
-            question: "Mục tiêu của CLB?",
+            question: "Mục tiêu của CLB",
             answers: [
               "+ Kết nối các sinh viên có đam mê về công nghệ thông tin trong và ngoài trường đại học.",
               "+ Giúp đỡ các thành viên CLB trong việc học tập và nghiên cứu để đạt được thành tích cao.",
@@ -29,7 +29,7 @@ function FAQs() {
         />
         <Question
           question={{
-            question: "Mô hình tổ chức CLB?",
+            question: "Mô hình tổ chức CLB",
             answers: [
               "CLB được chia thành các ban:",
               "-  Khối Chuyên môn: bao gồm các ban có nhiệm vụ giảng dạy các kiến thức lập trình từ cơ bản đến chuyên ngành",
@@ -49,7 +49,7 @@ function FAQs() {
         />
         <Question
           question={{
-            question: "Các lớp học bổ trợ kiến thức do CLB tổ chức?",
+            question: "Các lớp học bổ trợ kiến thức do CLB tổ chức",
             answers: [
               "CLB hiện đang tổ chức nhiều lớp bổ trợ kiến thức dựa theo những môn học hiện đang được giảng dạy tại trường ĐH GTVT từ năm nhất đến năm hai, bao gồm: Tin học đại cương, Kĩ thuật lập trình, Lập trình hướng đối tượng, Cấu trúc dữ liệu và giải thuật, Git/Github, Thiết kế Web,…",
             ],
@@ -57,7 +57,7 @@ function FAQs() {
         />
         <Question
           question={{
-            question: "Lợi ích khi tham gia CLB ?",
+            question: "Lợi ích khi tham gia CLB",
             answers: [
               "+ Nâng cao thành tích học tập: Tham gia các lớp học bổ trợ kiến thức do CLB tổ chức, giúp cải thiện kết quả học tập trong nhà trường.",
               "+ Phát triển kiến thức và kỹ năng chuyên môn: Mở rộng hiểu biết và rèn luyện kỹ năng trong đa dạng lĩnh vực của ngành CNTT.",
@@ -69,7 +69,7 @@ function FAQs() {
         />
         <Question
           question={{
-            question: "Đối tượng tham gia CLB ?",
+            question: "Đối tượng tham gia CLB",
             answers: [
               "CLB chào đón tất cả các sinh viên trong và ngoài trường đại học. Bất kể bạn có là sinh viên ngành CNTT, Điện - điện tử, hay các khối ngành khác, nếu bạn có niềm đam mê với công nghệ thông tin, CLB luôn mở rộng cánh cửa chào đón. SFIT mong muốn tạo ra một cộng đồng đa dạng, nơi mọi sinh viên có thể cùng nhau học hỏi, chia sẻ và phát triển kỹ năng trong lĩnh vực CNTT.",
             ],
@@ -77,7 +77,7 @@ function FAQs() {
         />
         <Question
           question={{
-            question: "Làm thế nào để tham gia CLB?",
+            question: "Làm thế nào để tham gia CLB",
             answers: [
               "Kế hoạch tuyển thành viên của CLB sẽ được thông báo trên fanpage chính thức: SFIT - CLB Tin học đại học Giao Thông Vận Tải.",
             ],

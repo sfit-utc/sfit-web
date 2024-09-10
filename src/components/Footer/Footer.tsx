@@ -5,7 +5,7 @@ import mail_icon from "../../assets/mail-svgrepo-com.svg";
 function Footer() {
   return (
     <div className="bg-green-800 text-white flex flex-col items-center justify-center px-10">
-      <div className="lg:flex justify-between w-screen md:py-8 py-4 md:px-40 px-4">
+      <div className="lg:flex justify-between w-screen md:py-8 py-4 xl:px-44 lg:px-28 px-4">
         <div>
           <div className="font-bold md:text-6xl text-2xl">SFIT</div>
           <div className="md:text-2xl text-xl md:mt-5 leading-relaxed">
