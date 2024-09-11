@@ -8,6 +8,8 @@ function Home() {
   const [widthWindow, setWidthWindow] = useState(window.innerWidth);
   const [isModalOpen, setIsModalOpen] = useState(false); // State quản lý modal
 
+
+
   useEffect(() => {
     const handleResize = () => setWidthWindow(window.innerWidth);
     window.addEventListener("resize", handleResize);
@@ -18,6 +20,15 @@ function Home() {
   const handleModel = () => {
     setIsModalOpen(!isModalOpen); // Toggle modal khi click
   };
+
+  const handleVideo = () => {
+    window.open("https://www.facebook.com/watch/?mibextid=UalRPS&v=1038642307267589&rdid=VPR7mRUpAYq98Og6", "_blank");
+  }
+
+  const handleDetail = () => {
+    // go to link
+    window.open("https://www.facebook.com/sfit.utc", "_blank");
+  }
 
   return (
     // Home
@@ -59,6 +70,7 @@ function Home() {
           </div>
         </div>
       )}
+
       {/* Welcome */}
       <div
         className="relative w-screen h-screen
@@ -114,6 +126,7 @@ function Home() {
                     className="w-fit 
                               flex items-center justify-center my-2
                               xl:my-6"
+                    onClick={handleVideo}
                   >
                     <button type="button" className="w-[70px] h-[70px]">
                       <svg
@@ -142,6 +155,7 @@ function Home() {
                     </span>
                   </div>
                   <button
+                    onClick={handleDetail}
                     type="button"
                     className="w-48 h-16
                                             bg-[#D9D9D9] rounded-[36px]
@@ -180,7 +194,7 @@ function Home() {
                 >
                   UTC'S IT CLUB
                 </span>
-                <div
+                <div onClick={handleVideo}
                   className="w-fit 
                               flex items-center justify-center my-2
                               xl:my-6"
@@ -211,7 +225,7 @@ function Home() {
                     Xem video
                   </span>
                 </div>
-                <button
+                <button onClick={handleDetail}
                   type="button"
                   className="w-48 h-16
                                             bg-[#D9D9D9] rounded-[36px]
