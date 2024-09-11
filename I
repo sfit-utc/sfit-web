@@ -1,0 +1,10 @@
+  Advisory[m
+  Boards_And_Education[m
+  Classes[m
+  Competition[m
+  Event[m
+  Honors[m
+* [32mResponsive/Advisory[m
+  footer[m
+  list[m
+  main[m

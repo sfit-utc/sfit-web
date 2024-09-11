@@ -11,7 +11,7 @@ interface Class {
 function ClassCard({ classInfor }: { classInfor: Class }) {
     return (
         <div
-            className="w-96 h-[526px] border-2 rounded-3xl border-[#267452] p-5
+            className=" xl:w-96 xl:h-[526px] border-2 rounded-3xl border-[#267452] p-5
                           flex flex-col"
           >
             <div className="h-72 w-80 self-center">
