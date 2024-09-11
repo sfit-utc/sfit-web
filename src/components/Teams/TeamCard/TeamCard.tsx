@@ -36,7 +36,7 @@ function TeamCard({ team, type }: TeamCardProps) {
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center',
                             }}>
-                                <div className="absolute w-[400px] h-[400px]">
+                                <div className="hidden sm:block absolute w-[400px] h-[400px]">
                                     <div style={{
                                         backgroundImage: `url(${team.icon})`,
                                         backgroundSize: 'cover',
@@ -85,7 +85,7 @@ function TeamCard({ team, type }: TeamCardProps) {
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center',
                             }}>
-                                <div className="absolute w-[400px] h-[400px]">
+                                <div className="hidden sm:block absolute w-[400px] h-[400px]">
                                     <div style={{
                                         backgroundImage: `url(${team.icon})`,
                                         backgroundSize: 'cover',
