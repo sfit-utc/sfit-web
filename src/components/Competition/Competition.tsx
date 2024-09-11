@@ -5,7 +5,7 @@ import Compe3 from "../../assets/competition/contest3.jpg"
 
 function Competition() {
   return (
-    <div id='team' className='w-screen'>
+    <div id='competition' className='w-screen'>
       <h1
         className="text-center tracking-normal
                        font-[Inter] md:text-5xl text-xl font-bold text-[#267452]
