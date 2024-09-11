@@ -53,7 +53,7 @@ function Advisory()  {
       </h1>
       <div className="mx-auto mt-2 bg-[#39906A] w-[525px] h-[4px] mb-20"></div>
 
-      <div className="no-scrollbar px-6 no-scrollbar boards w-screen flex gap-20 cursor-grab
+      <div className="no-scrollbar px-6  boards w-screen flex gap-20 cursor-grab
                       select-none overflow-scroll scroll-smooth snap-x"
            ref={sliderRef}
            onMouseDown={handleMouseDown}

@@ -19,8 +19,9 @@ function Classes() {
       <div className="mx-auto mt-2 bg-[#39906A] w-[525px] h-[4px]"></div>
 
       <h2
-        className="text-center tracking-normal my-8
-                       font-[Crimson_Text] text-4xl "
+        className="xl:text-4xl md:text-3xl text-xl
+                   text-center tracking-normal my-8
+                   font-[Crimson_Text] "
       >
         Tổ chức các lớp học cho sinh viên
       </h2>
