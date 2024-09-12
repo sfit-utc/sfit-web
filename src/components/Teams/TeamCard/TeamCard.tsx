@@ -27,7 +27,7 @@ function TeamCard({ team, type }: TeamCardProps) {
 
     return (
         type ? (
-            <div className='relative duration-500 ease-in-out transform hover:scale-105 mb-[100px] md:mb-72 xl:mb-[100px]'>
+            <div className='relative duration-500 ease-in-out transform hover:scale-105 mb-[120px] md:mb-72 xl:mb-[100px]'>
                 <div className="h-[400px] relative z-10">
                     <div className="h-[400px] xl:flex xl:ml-[80px] xl:float-start relative z-10">
                         <div className="flex justify-center relative z-10">
@@ -76,7 +76,7 @@ function TeamCard({ team, type }: TeamCardProps) {
                 />
             </div>
         ) : (
-            <div className='relative duration-500 ease-in-out transform hover:scale-105 mb-[100px] md:mb-72 xl:mb-[100px]'>
+            <div className='relative duration-500 ease-in-out transform hover:scale-105 mb-[120px] md:mb-72 xl:mb-[100px]'>
                 <div className="h-[400px] relative z-10">
                     <div className="h-[400px] xl:flex xl:mr-[80px] xl:float-end md:mt-[0]">
                         <div className="order-2 flex justify-center">
