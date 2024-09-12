@@ -4,21 +4,32 @@ import advisor2 from "../../assets/advisors/3_Adviser_2.jpg";
 import advisor3 from "../../assets/advisors/3_Adviser_3.jpg";
 import advisor4 from "../../assets/advisors/3_Adviser_4.jpg";
 import advisor6 from "../../assets/advisors/3_Adviser_6.jpg";
+import { useEffect, useRef } from "react";
 
 function Advisory() {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const container = containerRef.current;
+    if (container) {
+      container.scrollLeft = (container.scrollWidth - container.clientWidth) / 2;
+    }
+  }, []);
+
   return (
     <div className="bg-white w-screen h-full relative overflow-x-hidden *:text-[#267452]">
       <h1
         className="text-center tracking-normal mt-20
-                   font-[Inter] text-5xl font-bold"
+                   font-[Inter] md:text-5xl text-xl font-bold"
       >
         BAN CỐ VẤN
       </h1>
-      <div className="mx-auto mt-2 bg-[#39906A] w-[525px] h-[4px] mb-20"></div>
+      <div className="mx-auto mt-2 bg-[#39906A] md:w-[525px] w-[200px] h-[4px] mb-20"></div>
 
       <div
+        ref={containerRef}
         className="px-6 boards w-screen flex gap-20
-                      select-none overflow-scroll scroll-smooth">
+                      select-none overflow-scroll scroll-smooth hide-scrollbar">
         {/* Items */}
         <AdvisoryCard
           advisor={{
