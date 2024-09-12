@@ -14,7 +14,7 @@ function Competition() {
         CÁC CUỘC THI
       </h1>
       <div className="mx-auto mt-2 bg-[#39906A] md:w-[525px] w-[200px] h-[4px] mb-20"></div>
-      <div className="honor__list flex flex-wrap gap-10 items-center justify-center">
+      <div className="honor__list flex flex-wrap gap-10 items-center justify-center px-2">
         <CompetitionCard card={{
           name: "OLP Tin học SV 2024",
           image: Compe1,

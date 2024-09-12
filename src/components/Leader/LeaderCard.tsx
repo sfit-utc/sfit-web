@@ -12,7 +12,7 @@ function LeaderCard({ leader }: { leader: Leader }) {
         <div className="relative flex flex-col items-center">
             <div className="relative">
                 <img src={leader.image} alt={leader.name} className="md:w-[304px] md:h-[304px] w[200px] h-[200px] rounded-full object-cover bg-[#D9D9D9] shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)]" />
-                <svg xmlns="http://www.w3.org/2000/svg" className="absolute bottom-[-40px] left-1/2 transform -translate-x-1/2 md:w-[338px] md:h-[121px] w-[230px] h-[105px]" viewBox="0 0 338 121" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" className="absolute bottom-[-40px] left-1/2 transform -translate-x-1/2 lg:w-[338px] lg:h-[121px] w-[230px] h-[105px]" viewBox="0 0 338 121" fill="none">
                     <path d="M3 1C52.5 154.5 286.5 157 334.5 1" stroke="#DC9358" strokeWidth="6" />
                 </svg>
             </div>
