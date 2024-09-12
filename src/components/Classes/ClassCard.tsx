@@ -12,6 +12,7 @@ function ClassCard({ classInfor }: { classInfor: Class }) {
     return (
         <div
             className=" h-[500px]
+                        sm:w-72          
                         md:w-80  
                         xl:w-96  
                         border-2 rounded-3xl border-[#267452] p-5
