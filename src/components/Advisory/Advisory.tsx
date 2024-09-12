@@ -17,7 +17,7 @@ function Advisory() {
       <div className="mx-auto mt-2 bg-[#39906A] w-[525px] h-[4px] mb-20"></div>
 
       <div
-        className="px-6 boards w-screen flex gap-20
+        className="boards px-6 boards w-screen flex gap-20
                       select-none overflow-scroll scroll-smooth">
         {/* Items */}
         <AdvisoryCard

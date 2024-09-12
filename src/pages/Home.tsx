@@ -150,7 +150,7 @@ function Home() {
                         />
                       </svg>
                     </button>
-                    <span className="w-fit text-xl font-bold text-white">
+                    <span className="w-fit text-xl font-bold text-white sm:mr-10">
                       Xem video
                     </span>
                   </div>
