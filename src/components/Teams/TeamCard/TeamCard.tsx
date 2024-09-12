@@ -27,9 +27,9 @@ function TeamCard({ team, type }: TeamCardProps) {
 
     return (
         type ? (
-            <div className='relative duration-500 ease-in-out transform hover:scale-105 mb-[100px]'>
+            <div className='relative duration-500 ease-in-out transform hover:scale-105 mb-[100px] md:mb-72 xl:mb-[100px]'>
                 <div className="h-[400px] relative z-10">
-                    <div className="h-[400px] md:flex md:ml-[80px] md:float-start relative z-10">
+                    <div className="h-[400px] xl:flex xl:ml-[80px] xl:float-start relative z-10">
                         <div className="flex justify-center relative z-10">
                             <div className="md:w-[400px] md:h-[400px] w-[300px] h-[300px] bg-[#d9d9d9] rounded-[30px]" style={{
                                 backgroundImage: `url(${team.image})`,
@@ -51,7 +51,7 @@ function TeamCard({ team, type }: TeamCardProps) {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex justify-center items-center md:ml-[100px] mt-[15px] md:mt-[0px] m-[5px] md:m-[0] relative z-10">
+                        <div className="flex justify-center items-center xl:ml-[100px] mt-[15px] md:mt-[0px] m-[5px] md:m-[0] relative z-10">
                             <div>
                                 <div className="md:w-[609px] md:h-[85px] text-center text-black md:text-[44px] text-[20px] font-semibold font-['Crimson Text']">
                                     {team.name}
@@ -76,9 +76,9 @@ function TeamCard({ team, type }: TeamCardProps) {
                 />
             </div>
         ) : (
-            <div className='relative duration-500 ease-in-out transform hover:scale-105 mb-[100px]'>
+            <div className='relative duration-500 ease-in-out transform hover:scale-105 mb-[100px] md:mb-72 xl:mb-[100px]'>
                 <div className="h-[400px] relative z-10">
-                    <div className="h-[400px] md:flex md:mr-[80px] float-end md:mt-[0]">
+                    <div className="h-[400px] xl:flex xl:mr-[80px] xl:float-end md:mt-[0]">
                         <div className="order-2 flex justify-center">
                             <div className="md:w-[400px] md:h-[400px] w-[300px] h-[300px] bg-[#d9d9d9] rounded-[30px]" style={{
                                 backgroundImage: `url(${team.image})`,
@@ -100,7 +100,7 @@ function TeamCard({ team, type }: TeamCardProps) {
                                 </div>
                             </div>
                         </div>
-                        <div className="order-1 flex justify-center items-center md:mr-[100px] mt-[15px] md:mt-[0px] m-[5px] md:m-[0]">
+                        <div className="order-1 flex justify-center items-center xl:mr-[100px] mt-[15px] md:mt-[0px] m-[5px] md:m-[0]">
                             <div>
                                 <div className="md:w-[609px] md:h-[85px] text-center text-black md:text-[44px] text-[20px] font-semibold font-['Crimson Text']">
                                     {team.name}

@@ -29,7 +29,7 @@ function Classes() {
       <div className="w-screen h-fit mt-10 ">
         <div
           className="w-screen 
-                      flex flex-wrap gap-16 justify-center items-center "
+                      flex flex-wrap gap-16 justify-center items-center px-2 "
         >
           {/* Items */}
           <ClassCard
