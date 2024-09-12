@@ -11,12 +11,12 @@ function Classes() {
     <div id="training" className="bg-white w-screen h-fit overflow-x-hidden *:text-[#267452] my-20">
       <h1
         className="text-center tracking-normal
-                       font-[Inter] text-5xl font-bold
+                       font-[Inter] md:text-5xl text-xl font-bold
                        "
       >
         ĐÀO TẠO
       </h1>
-      <div className="mx-auto mt-2 bg-[#39906A] w-[525px] h-[4px]"></div>
+      <div className="mx-auto mt-2 bg-[#39906A] md:w-[525px] w-[200px] h-[4px]"></div>
 
       <h2
         className="xl:text-4xl md:text-3xl text-xl
