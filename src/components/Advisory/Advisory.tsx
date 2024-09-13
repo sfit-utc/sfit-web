@@ -73,7 +73,7 @@ function Advisory() {
             image: advisor6,
             role: "Cựu chủ nhiệm CLB Tin học",
             position: "Kỹ sư phát triển phần mềm Cty điện tử Thiên Quang",
-            addition: "Giám đốc trung tâm thông tin - thư viện",
+            addition: "",
           }}
         />
       </div>
