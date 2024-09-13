@@ -54,7 +54,7 @@ function Advisory() {
             name: "Cao Thị Luyên",
             image: advisor3,
             role: "",
-            position: "Phó trưởng bộ môn CMPM",
+            position: "Phó trưởng bộ môn CNPM",
             addition: "Phó chủ tịch công đoàn",
           }}
         />
